@@ -24,7 +24,7 @@ echo "DISTRIB_SOURCECODE='official'" >>package/base-files/files/etc/openwrt_rele
 #
 # Add luci-app-amlogic
 #svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-svn co https://github.com/sbwml/luci-app-alist package/luci-app-alist
+svn co https://github.com/sbwml/luci-app-alist package/alist
 svn co https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
 svn co https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 # coolsnowwolf default software package replaced with Lienol related software package
