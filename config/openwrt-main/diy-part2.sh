@@ -17,6 +17,7 @@ echo "DISTRIB_SOURCECODE='official'" >>package/base-files/files/etc/openwrt_rele
 
 # Modify default IP（FROM 192.168.1.1 CHANGE TO 192.168.31.4）
 # sed -i 's/192.168.1.1/192.168.31.4/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
 #
 # ------------------------------- Main source ends -------------------------------
 
@@ -39,4 +40,7 @@ echo "DISTRIB_SOURCECODE='official'" >>package/base-files/files/etc/openwrt_rele
 # Apply patch
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
+# 添加luci-app-parentcontrol
+git clone https://github.com/sirpdboy/luci-app-parentcontrol.git package/luci-app-parentcontrol
+
 # ------------------------------- Other ends -------------------------------
