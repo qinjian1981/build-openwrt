@@ -43,4 +43,6 @@ sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_gener
 # 添加luci-app-parentcontrol
 # git clone https://github.com/sirpdboy/luci-app-parentcontrol.git package/luci-app-parentcontrol
 
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+
 # ------------------------------- Other ends -------------------------------
